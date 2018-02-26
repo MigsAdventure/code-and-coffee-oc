@@ -1,0 +1,42 @@
+.NavBar {
+  font-size: 30px;
+  position: absolute;
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 10;
+  }
+  .nav-wrapper {
+    z-index: 1;
+    transition: all .3s;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
+    > .nav-items {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      > .nav-item {
+        padding: 20px 0px;
+        > a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+  .hide-nav {
+    left: 100%;
+  }
+  .show-nav {
+    left: 0%;
+  }
+
+}

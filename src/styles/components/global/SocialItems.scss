@@ -1,0 +1,28 @@
+@import '../../_partials/_mixins';
+.SocialItems {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 400px;
+  margin: auto;
+  > .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 4%;
+    display: inline-block;
+    text-align: center;
+    &.facebook-social {
+      @include icon-bg('facebook-icon.png');
+    }
+    &.instagram-social {
+      @include icon-bg('instagram-icon.png');
+    }
+    &.linkedin-social {
+      @include icon-bg('linkedin-icon.png');
+    }
+    &.twitter-social {
+      @include icon-bg('twitter-icon.png');
+    }
+  }
+}

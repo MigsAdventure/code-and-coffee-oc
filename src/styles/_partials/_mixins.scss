@@ -1,0 +1,14 @@
+$start-path: '../../../media/images';
+@mixin default-bg-props {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin icon-bg($image, $dir: 'global', $page: '') {
+  @include default-bg-props;
+  @if ($page) {
+    background-image: url('#{$start-path}/#{$dir}/#{$page}/#{$image}');
+  }
+  background-image: url('#{$start-path}/#{$dir}/#{$image}');
+}
