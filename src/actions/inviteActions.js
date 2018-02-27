@@ -7,10 +7,16 @@ import axios from 'axios';
 
 export function inviteEmail(email) {
   let environment = 'prod';
-  let current_url = 'https://still-spire-83012.herokuapp.com/api/slack/invite';
-    axios.post(current_url, email)
+  let current_url = 'http://localhost:8000/api/slack/invite';
+  if(environment !== 'dev') {
+    current_url = 'https://still-spire-83012.herokuapp.com/api/slack/invite';
+  }
+  console.log('EMAIL: ', email);
+    console.log(current_url);
+    axios.post(current_url, {email: email})
     .then(res => {
       console.log(res.data);
+      console.log('invitation success!');
     })
     .catch(err => {
     console.log(err);
