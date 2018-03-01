@@ -13,7 +13,7 @@ export function inviteEmail(email) {
   }
     axios.post(endpoint, {email: email})
     .then(res => {
-      alert(res.data);
+      alert(res.data.error || 'Check Your Email!');
     })
     .catch(err => {
       alert(err);
