@@ -1,7 +1,9 @@
+ // I don't use shorthand on stylesheets for better browser support
+
 @import './vendor/normalize';
 @import './vendor/fonts';
-@import './_partials/_settings';
-@import './_partials/_mixins';
+@import './_partials/settings';
+@import './_partials/mixins';
 
 * {
   box-sizing: border-box;
@@ -14,14 +16,18 @@ html, body, #root, #App {
   width: 100%;
 }
 
+body {
+  background-image: url();
+  text-align: center;
+}
+
 li {
   list-style: none;
 }
 
 a {
+  cursor: pointer;
   display: inline-block;
-  height: 100%;
-  width: 100%;
 }
 
 // Page defaults
