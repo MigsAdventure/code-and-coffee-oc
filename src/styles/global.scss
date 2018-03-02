@@ -17,21 +17,28 @@ html, body, #root, #App {
 }
 
 body {
-  background-image: url();
+  background-blend-mode: color-burn;
+  background-color: $light-black;
+  background-image: url('./../media/images/global/c&c_logo.jpg');
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-size: 320px;
   text-align: center;
-}
+  text-shadow: 0 0 0 $black;
+  color: $light-grey;
+  li {
+    list-style: none;
+  }
 
-li {
-  list-style: none;
-}
+  a {
+    cursor: pointer;
+    display: inline-block;
+    color: $beige-shade;
+  }
 
-a {
-  cursor: pointer;
-  display: inline-block;
-}
-
-// Page defaults
-#Home, #About, #NewPage {
-  height: 100%;
-  width: 100%;
+  // Page defaults
+  #Home, #About, #NewPage {
+    height: 100%;
+    width: 100%;
+  }
 }
