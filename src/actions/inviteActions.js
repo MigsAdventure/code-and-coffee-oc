@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 
-
-
 // send email to invite
 
 export function inviteEmail(email) {
