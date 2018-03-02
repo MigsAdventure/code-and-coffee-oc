@@ -1,10 +1,10 @@
 @import '../../_partials/settings';
 
 .global-btn {
-  background: $tranparent-white;
-  color: $white;
   appearance: none;
-  padding: 5px;
-  border-radius: 3px;
+  background: $tranparent-white;
   border: solid 1px $tranparent-white;
+  border-radius: 3px;
+  color: $white;
+  padding: 5px;
 }

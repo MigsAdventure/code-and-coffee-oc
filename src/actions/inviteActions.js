@@ -7,11 +7,13 @@ export function inviteEmail(email) {
   if(environment !== 'development') {
     endpoint = 'https://still-spire-83012.herokuapp.com/api/slack/invite';
   }
+  console.log(email);
     axios.post(endpoint, {email: email})
     .then(res => {
       alert(res.data.error || 'Check Your Email!');
     })
     .catch(err => {
+      console.log(err);
       alert(err);
     console.log(err);
     });

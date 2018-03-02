@@ -27,6 +27,11 @@ body {
   text-align: center;
   text-shadow: 0 0 0 $black;
   color: $light-grey;
+  
+  .page-title {
+    margin: 24px auto;
+  }
+
   li {
     list-style: none;
   }

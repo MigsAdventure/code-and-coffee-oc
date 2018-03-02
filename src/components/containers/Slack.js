@@ -1,3 +1,4 @@
+import '../../_styles/components/Slack/Slack.css';
 import React from 'react';
 import { inviteEmail } from '../../actions/inviteActions';
 
@@ -16,7 +17,7 @@ export default function Slack() {
       <p>Enter your email below to receive an invite to our slack channel.</p>
       <form onSubmit={submitForm} className="slack-invite-form">
         <input name="email" type="email" placeholder="example@gmail.com"/>
-        <a className="global-btn" type="submit" id="submit-btn">Invite Me!</a>
+        <button className="global-btn" type="submit">Invite Me!</button>
       </form>
     </div>
   )
