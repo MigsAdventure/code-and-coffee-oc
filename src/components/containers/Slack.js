@@ -16,7 +16,7 @@ export default function Slack() {
       <p>Enter your email below to receive an invite to our slack channel.</p>
       <form onSubmit={submitForm} className="slack-invite-form">
         <input name="email" type="email" placeholder="example@gmail.com"/>
-        <a className="global-btn" type="submit">Invite Me!</a>
+        <a className="global-btn" type="submit" id="submit-btn">Invite Me!</a>
       </form>
     </div>
   )
