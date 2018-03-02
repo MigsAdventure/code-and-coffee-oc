@@ -1,1 +1,1 @@
-Slack Invite basic frontend
+Code and Coffee OC Website Repo
