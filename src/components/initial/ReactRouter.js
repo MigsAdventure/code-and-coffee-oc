@@ -4,8 +4,8 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 
 import App from './App';
 import Home from '../containers/Home';
-import NewPage from '../containers/NewPage';
 import About from '../containers/About';
+import Slack from '../containers/Slack';
 
 
 export default function ReactRouter() {
@@ -14,8 +14,8 @@ export default function ReactRouter() {
       <Route path="/" component={App}>
         <IndexRedirect to="/home" />
         <Route path="/home" component={Home} />
-        <Route path="/new-page" component={NewPage} />
         <Route path="/about" component={About} />
+        <Route path="/slack" component={Slack} />
       </Route>
     </Router>
   );

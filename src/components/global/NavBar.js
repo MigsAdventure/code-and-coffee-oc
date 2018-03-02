@@ -30,8 +30,8 @@ export default class  NavBar extends Component {
         <div className={`nav-wrapper ${nav_visible}`}>
           <ul className="nav-items">
             <li onClick={this.NavToggle} className="nav-item"><Link to="/home">Home</Link></li>
-            <li onClick={this.NavToggle} className="nav-item"><Link to="/new-page">New Page</Link></li>
             <li onClick={this.NavToggle} className="nav-item"><Link to="/about">About</Link></li>
+            <li onClick={this.NavToggle} className="nav-item"><Link to="/slack">Slack</Link></li>
           </ul>
         </div>
         <div className="hamburger" onClick={this.NavToggle}>
