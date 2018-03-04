@@ -4,7 +4,7 @@ import axios from 'axios';
 export function inviteEmail(email) {
   const environment = process.env.NODE_ENV;
   let endpoint = 'http://localhost:8000/api/slack/invite';
-  if(environment !== 'development') {
+  if(environment !== 'dev') {
     endpoint = 'https://still-spire-83012.herokuapp.com/api/slack/invite';
   }
   console.log(email);

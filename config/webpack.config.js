@@ -42,7 +42,8 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: path.join(dirApp, 'index.ejs'),
-            title: appHtmlTitle
+            title: appHtmlTitle,
+            favicon: 'favicon.ico',
         })
     ],
     module: {

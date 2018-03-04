@@ -5,8 +5,11 @@
 // Load application styles
 import 'styles/global.scss';
 
+
 // ================================
 // START YOUR APP HERE
 // ================================
 
-alert('hello');
+$(document).ready(function() {
+  alert('test');
+})
