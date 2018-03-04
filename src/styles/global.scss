@@ -1,0 +1,54 @@
+body {
+  background: red;
+}
+
+//  // I don't use shorthand on stylesheets for better browser support
+//
+// @import './vendor/normalize';
+// @import './vendor/fonts';
+// @import './_partials/settings';
+// @import './_partials/mixins';
+// @import './components/global/buttons.scss';
+//
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+//
+// html, body, #root, #App {
+//   height: 100%;
+//   width: 100%;
+// }
+//
+// body {
+//   background-blend-mode: color-burn;
+//   background-color: $light-black;
+//   background-image: url('./../media/images/global/c&c_logo.jpg');
+//   background-position: center 100px;
+//   background-repeat: no-repeat;
+//   background-size: 320px;
+//   text-align: center;
+//   text-shadow: 0 0 0 $black;
+//   color: $light-grey;
+//
+//   .page-title {
+//     margin: 24px auto;
+//   }
+//
+//   li {
+//     list-style: none;
+//   }
+//
+//   a {
+//     cursor: pointer;
+//     display: inline-block;
+//     color: $beige-shade;
+//   }
+//
+//   // Page defaults
+//   #Home, #About, #NewPage {
+//     height: 100%;
+//     width: 100%;
+//   }
+// }

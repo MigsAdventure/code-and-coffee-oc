@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "homepage": ".",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --config webpack.config.dev.js",
-    "build": "webpack -p --progress --config webpack.config.build.js",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --config config/webpack.config.dev.js",
+    "build": "webpack -p --progress --config config/webpack.config.build.js",
     "build-css": "node-sass-chokidar src/styles/ -o src/_styles",
     "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/_styles --watch --recursive",
     "deploy": "npm run build&&gh-pages -d build"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "lodash": "^4.17.5"
   },
   "devDependencies": {

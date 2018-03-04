@@ -6,8 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
 const dirNode = 'node_modules';
-const dirApp = path.join(__dirname, 'src');
-const dirAssets = path.join(__dirname, 'assets');
+const dirApp = path.join(__dirname, '/../src');
+const dirAssets = path.join(dirApp, 'assets');
+const dirStyles = path.join(dirApp, 'styles');
 
 const appHtmlTitle = 'Code and Coffee OC';
 
@@ -25,7 +26,8 @@ module.exports = {
         modules: [
             dirNode,
             dirApp,
-            dirAssets
+            dirAssets,
+            dirStyles
         ]
     },
     plugins: [
@@ -39,7 +41,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'index.ejs'),
+            template: path.join(dirApp, 'index.ejs'),
             title: appHtmlTitle
         })
     ],
@@ -84,7 +86,7 @@ module.exports = {
                         loader: 'sass-loader',
                         options: {
                             sourceMap: IS_DEV,
-                            includePaths: [dirAssets]
+                            includePaths: [dirStyles]
                         }
                     }
                 ]

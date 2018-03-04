@@ -3,8 +3,10 @@
  */
 
 // Load application styles
-import 'styles/index.scss';
+import 'styles/global.scss';
 
 // ================================
 // START YOUR APP HERE
 // ================================
+
+alert('hello');
