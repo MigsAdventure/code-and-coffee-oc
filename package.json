@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "homepage": ".",
   "scripts": {
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --config webpack.config.dev.js",
+    "build": "webpack -p --progress --config webpack.config.build.js",
     "build-css": "node-sass-chokidar src/styles/ -o src/_styles",
     "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/_styles --watch --recursive",
     "deploy": "npm run build&&gh-pages -d build",
-    "test": "node scripts/test.js --env=jsdom"
   },
   "dependencies": {
     "lodash": "^4.17.5"

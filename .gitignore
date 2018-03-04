@@ -17,3 +17,14 @@ src/_styles
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.idea
+.sass-cache
+
+## Directories
+log/
+dist/
+bower_components/
+
+## Files
+result.xml
+npm-debug.log
