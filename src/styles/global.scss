@@ -4,9 +4,9 @@
 @import './vendor/fonts';
 @import './_partials/settings';
 @import './_partials/mixins';
-@import './components/global/buttons.scss';
-@import './components/global/navBar.scss';
-@import './components/global/footer.scss';
+@import './global/buttons.scss';
+@import './global/navBar.scss';
+@import './global/footer.scss';
 
 * {
   box-sizing: border-box;
@@ -14,21 +14,22 @@
   padding: 0;
 }
 
-html, body, #root, #App {
+html, body, #main {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background-blend-mode: color-burn;
-  background-color: $light-black;
-  background-image: url('./../assets/images/global/c&c_logo.jpg');
-  background-position: center 100px;
-  background-repeat: no-repeat;
-  background-size: 320px;
   text-align: center;
   text-shadow: 0 0 0 $black;
   color: $light-grey;
+  background-color: $light-black;
+  background-attachment: fixed;
+  background-blend-mode: color-burn;
+  background-image: url('./../assets/images/global/c&c_logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 320px;
 
   .page-title {
     margin: 24px auto;
@@ -44,9 +45,28 @@ body {
     color: $beige-shade;
   }
 
-  // Page defaults
-  #Home, #About, #NewPage {
+  img {
     height: 100%;
     width: 100%;
+  }
+
+  #main {
+    // 45px on top because navbar is fixed and is 45px in height
+    padding-top: 45px;
+    .page-section {
+      padding: 0px 20px;
+      // add height 100% so each section has a full page
+      // height: 100%;
+      p {
+        max-width: 540px;
+        margin: auto;
+        text-align: left;
+        line-height: 2;
+        padding: 10px;
+      }
+      &#home-section {
+        // no content here yet
+      }
+    }
   }
 }

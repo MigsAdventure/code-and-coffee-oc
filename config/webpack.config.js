@@ -20,7 +20,7 @@ module.exports = {
         vendor: [
             'lodash'
         ],
-        bundle: path.join(dirApp, 'js/index')
+        bundle: path.join(dirApp, 'js/index.js')
     },
     resolve: {
         modules: [

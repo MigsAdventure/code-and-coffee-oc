@@ -1,42 +1,58 @@
-.navBar {
+@import '../_partials/settings';
+
+#navbar {
   font-size: 30px;
-  position: absolute;
-  .hamburger {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    color: white;
-    z-index: 10;
-  }
-  .nav-wrapper {
-    z-index: 1;
-    transition: all .3s;
-    height: 100%;
+  position: fixed;
+  background: $black;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  .navbar-inner-wrapper {
     width: 100%;
-    position: fixed;
-    top: 0%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .9);
-    > .nav-items {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      transform: translateY(-50%);
-      > .nav-item {
-        padding: 20px 0px;
-        > a {
-          text-decoration: none;
-          color: whitesmoke;
+    height: 100%;
+    .nav-logo {
+      float: left;
+      width: 50px;
+      > img {
+        vertical-align: text-bottom;
+      }
+    }
+    .hamburger {
+      z-index: 10;
+      float: right;
+      margin-right: 10px;
+    }
+    .nav-body {
+      z-index: 1;
+      background: $black;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      z-index: -1;
+      transition: 0.3s;
+      &.hide-nav {
+        left: 100%;
+      }
+      &.show-nav {
+        // this class will toggle with javascript. Look inside navBar.js for logic
+        left: 0%;
+      }
+      > .nav-list {
+        // align nav list close to middle in any screen size. use top: 50% for middle
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        margin: auto;
+        left: 0;
+        right: 0;
+        > .nav-item {
+          padding: 5px;
+          margin: 10px auto;
         }
       }
     }
   }
-  .hide-nav {
-    left: 100%;
-  }
-  .show-nav {
-    left: 0%;
-  }
+
 
 }

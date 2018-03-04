@@ -6,9 +6,14 @@
 import 'styles/global.scss';
 
 
+// Import javascript files
+import './global/toggleElements.js';
+
+
 // ================================
 // START YOUR APP HERE
 // ================================
 
 $(document).ready(function() {
+
 })

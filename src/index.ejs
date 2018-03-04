@@ -1,16 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="shortcut icon" href="src/assets/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="shortcut icon" href="src/assets/favicon.ico" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="main">
-        <h1>code-and-coffee-oc</h1>
+  <!-- NAVBAR -->
+  <nav id="navbar" >
+    <div class="navbar-inner-wrapper">
+      <a class="page-scroll nav-logo" href="/"><img src="src/assets/images/global/c&c_logo.png" alt=""></a>
+      <a class="navbar-toggle hamburger">
+        <span class="fa fa-bars"></span>
+      </a>
+      <div class="nav-body hide-nav">
+        <ul class="nav-list">
+          <!-- enable this once there's content on the home page -->
+          <!-- <li class="nav-item"><a class="page-scroll" href="#home-section">Home</a></li> -->
+          <li class="nav-item"><a class="page-scroll" href="#about-section">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-inner-wrapper -->
+  </nav>
+
+  <div id="main">
+    <!-- HEADER SECTION -->
+    <div id="home-section" class="home page-section">
+      <!-- we need more content here. Maybe a gallery of photos from meetups? or events coming up?  -->
+      <!-- <p>Find us on <a href="https://www.meetup.com/Free-Code-Camp-Orange-County-CA/">Meetup</a> or join us on <a href="#/slack">Slack.</a></p> -->
     </div>
+    <!-- ABOUT SECTION -->
+    <div id="about-section" class="about page-section">
+      <h1 className="page-title">Who We Are</h1>
+      <div className="info-container">
+        <p>Whether you are a total beginner or well experienced, we welcome you to join us if you are interested in code pairing,enhancing your technical skills in JavaScript, JQuery, HTML, CSS, Angular.js, Node.js. and much more.</p>
+        <p>We started this for anyone currently taking the Free Code Camp courses online at <a href="http://www.freecodecamp.com">Freecodecamp</a> hoping to connect with a local campers in Orange County, CA, but have expanded to those interested in learning other programming languages and related technical skills.</p>
+        <p>If you would like to host an event or have a venue in mind, feel free to reach out!</p>
+        <p>Find us on <a href="https://www.meetup.com/Free-Code-Camp-Orange-County-CA/">Meetup</a> or join us on <a href="#/slack">Slack.</a> </p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
