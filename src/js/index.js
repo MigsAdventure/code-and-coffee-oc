@@ -11,5 +11,4 @@ import 'styles/global.scss';
 // ================================
 
 $(document).ready(function() {
-  alert('test');
 })
