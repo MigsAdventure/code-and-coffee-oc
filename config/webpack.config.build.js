@@ -9,7 +9,7 @@ module.exports = merge(webpackConfig, {
     devtool: 'cheap-module-source-map',
 
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, '../dist'),
         filename: '[name].[chunkhash].js'
     },
 

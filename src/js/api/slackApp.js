@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // send email to invite
-export function inviteEmail(email) {
+export function slackInviteEmail(email) {
   const environment = process.env.NODE_ENV;
   let endpoint = 'http://localhost:8000/api/slack/invite';
   if(environment !== 'dev') {

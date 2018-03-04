@@ -8,6 +8,7 @@ import 'styles/global.scss';
 
 // Import javascript files
 import './global/toggleElements.js';
+import './api/slackApp.js';
 
 
 // ================================
@@ -15,5 +16,6 @@ import './global/toggleElements.js';
 // ================================
 
 $(document).ready(function() {
+
 
 })
