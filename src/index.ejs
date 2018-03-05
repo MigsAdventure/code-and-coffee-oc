@@ -11,6 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <!-- POPUP MODAL -->
+  <div class="popup-modal"></div>
   <!-- NAVBAR -->
   <nav id="navbar" >
     <div class="navbar-inner-wrapper">
@@ -23,6 +25,7 @@
           <!-- enable this once there's content on the home page -->
           <!-- <li class="nav-item"><a class="page-scroll" href="#home-section">Home</a></li> -->
           <li class="nav-item"><a class="page-scroll" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="page-scroll slack-btn" href="#slack-app">Slack</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.navbar-inner-wrapper -->
@@ -36,14 +39,27 @@
     </div>
     <!-- ABOUT SECTION -->
     <div id="about-section" class="about page-section">
-      <h1 className="page-title">Who We Are</h1>
-      <div className="info-container">
+      <h1 class="page-title">Who We Are</h1>
+      <div class="info-container">
         <p>Whether you are a total beginner or well experienced, we welcome you to join us if you are interested in code pairing,enhancing your technical skills in JavaScript, JQuery, HTML, CSS, Angular.js, Node.js. and much more.</p>
         <p>We started this for anyone currently taking the Free Code Camp courses online at <a href="http://www.freecodecamp.com">Freecodecamp</a> hoping to connect with a local campers in Orange County, CA, but have expanded to those interested in learning other programming languages and related technical skills.</p>
         <p>If you would like to host an event or have a venue in mind, feel free to reach out!</p>
-        <p>Find us on <a href="https://www.meetup.com/Free-Code-Camp-Orange-County-CA/">Meetup</a> or join us on <a href="#/slack">Slack.</a> </p>
+        <p>Find us on <a href="https://www.meetup.com/Free-Code-Camp-Orange-County-CA/">Meetup</a> or join us on <a class="slack-btn" href="#/slack">Slack.</a> </p>
       </div>
     </div>
+
+    <!-- Slack App -->
+    <div id="slack-app" class="slack-app">
+      <div class="slack-inner-wrapper">
+        <h1 class="page-title">Join Us On Slack</h1>
+        <p>Enter your email below to receive an invite to our slack channel.</p>
+        <form class="slack-invite-form">
+          <input name="email" type="email" placeholder="example@gmail.com"/>
+          <button class="global-btn slack-invite-btn" type="submit">Invite Me!</button>
+        </form>
+      </div>
+    </div>
+
   </div>
 
 </body>

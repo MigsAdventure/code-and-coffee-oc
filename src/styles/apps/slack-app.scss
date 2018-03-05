@@ -1,0 +1,22 @@
+.slack-app {
+  padding: 30px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  background: $black;
+  margin: auto;
+  max-width: 540px;
+  display: none;
+  z-index: 101;
+  > .slack-inner-wrapper {
+    .slack-invite-form {
+      input {
+        display: block;
+        margin: 20px auto;
+        padding: 5px;
+      }
+    }
+  }
+}
